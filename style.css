@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-attachment: fixed;
+    margin: 30px;
+    font-family: 'Patrick Hand', cursive;
+    background: linear-gradient(90deg, #301d3f 0%, #001999 100%);}
+
+#resultado{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.navbar {
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(255, 0, 157), rgb(132, 0, 255), rgb(0, 2, 128));
+    background-attachment: fixed;
+}
+
+button{
+    margin: 20px;
+    padding: 4px;
+}
+
+footer {
+    background-color: white;
+	display: inline-block;
+	margin-top: 1.25em;
+	padding: 0px;
+	position: relative;
+	width: 100%;
+	 }
+
+  .footer-column p img {
+	width: 40px;
+	
+  }
+
+
+audio {
+    width: 100%; /* ancho al 100% del contenedor */
+    max-width: 400px; /*ancho máximo si es necesario */
+    margin: 0 auto; /* Centra el reproductor */
+}
+
+
+.navbar-brand{
+    color: #FC466B;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODO OSCURO*/
+
+.card {
+    background-color: #211c33; 
+    color: white; 
+}
+
+/* BOTO CHANGE MODE*/
+#modoBoton {
+    background-color: rgb(21, 15, 54); 
+    color: rgb(255, 255, 255); 
+}
+
+/* BOTO PREVIOUS PAGE*/
+#prevPage {
+    background-color: rgb(21, 15, 54); 
+    color: rgb(255, 255, 255); 
+}
+
+/* BOTON NEXT PAGE*/
+#nextPage {
+    background-color: rgb(21, 15, 54); 
+    color: rgb(255, 255, 255); 
+}
+
+/*NUMERO DE PAGINA*/
+#pagina {
+    background-color: rgb(21, 15, 54); 
+    color: rgb(255, 255, 255); 
+}
+
+
+.navbar {
+    margin: 10px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(25, 1, 48), rgb(2, 3, 83));
+    background-attachment: fixed;
+}
+
+/* Cambia el color del texto del navbar en modo oscuro */
+.navbar a {
+    color: rgb(255, 255, 255); 
+}
+
+footer {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(25, 1, 48), rgb(2, 3, 83));
+}
+
+
+footer p {
+    color: rgb(255, 255, 255); 
+}
+
+
+/* Color al pasar por encima del texto del nav */
+.navbar a:hover {
+    color: #ccbaff;
+}
+
+
+#subir {
+    background-color: rgb(21, 15, 54); 
+    color: rgb(255, 255, 255); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MODO Claro */
+.dark-mode {
+    background: linear-gradient(90deg, #ff859d 0%, #748bff 100%);
+}
+
+.dark-mode .card {
+    background-color: #ffffff; 
+    color: rgb(0, 0, 0); 
+}
+
+/* modo oscuro boton */
+.dark-mode #modoBoton {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}
+
+.dark-mode #prevPage {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}
+
+.dark-mode #nextPage {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}
+
+.dark-mode #pagina {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}
+
+.dark-mode .navbar {
+    margin: 10px;
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+    background-attachment: fixed;
+}
+
+.dark-mode .navbar a {
+    color: rgb(0, 0, 0); 
+}
+
+.dark-mode footer {
+    background: linear-gradient(90deg, #FC466B 0%, #3F5EFB 100%);
+}
+
+.dark-mode footer p {
+    color: rgb(0, 0, 0); 
+}
+
+/* Evitar cambio de color al pasar el mouse en modo claro */
+.navbar a:hover {
+    color: #ffffff; 
+}
+
+/* Mantener el mismo color al pasar el mouse en modo oscuro */
+.dark-mode .navbar a:hover {
+    color: #000000; 
+}
+
+.dark-mode #subir {
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick y Morty API</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <nav class="navbar navbar-expand-lg bg-success">
+    <div class="container-fluid">
+        <img src="Logo.png" alt="Logo" width="30" height="40" class="d-inline-block align-text-top">
+      
+      <a class="navbar-brand" > API RICK and MORTY</a>
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Characters</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="lugares.html">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="capitulos.html">Episodes</a>
+          </li>
+        </ul>
+      </div>
+      <audio controls>
+        <source src="evilmorty.mp3" type="audio/mpeg">
+      </audio>
+      <button id="modoBoton" onclick="cambiarModo()">Change mode</button> <!-- Botón para cambiar el modo -->
+    </div>
+</nav>
+
+
+<button id="prevPage" onclick="previousPage()">Previous page</button>
+<button id="nextPage" onclick="nextPage()">Next page</button>
+
+<select name="pagina" id="pagina" onchange="apiRick(this.value)">
+    <script>
+        for (let i = 1; i <= 7; i++) {
+            document.write(`<option value="${i}">${i}</option>`)
+        }
+    </script>
+</select>
+
+    <div id="resultado"></div>
+    
+    <button id="prevPage" onclick="previousPage()">Previous page</button>
+    <button id="nextPage" onclick="nextPage()">Next page</button>
+   
+    <button id="subir"><a href="#top">To the top</a></button>
+      
+    <script src="ubicaciones.js"></script>
+</body>
+
+<footer>
+
+  <div class="footer-row">
+    <div class="footer-column">
+      <p><img src="Logo.png">  Página web creada por X  <img src="Logo.png"></p>
+    </div>
+  </div>
+
+</footer>
